@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  /* 1 rem = 10px  */
+  font-size: 62.5%;
+}
+/* Khôi phục lại cỡ chữ theo rem  */
+body {
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+}
+
+/* ========Common======== */
+a {
+  text-decoration: none;
+}
+.main-content {
+  width: 1250px;
+  /* Độ rộng mỗi bên 24px, sử dụng làm calc tính toán */
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn {
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 4px;
+  background: var(--Cyan-Main-cyan-color, #87e5ca);
+  display: inline-block;
+  padding: 0 18px;
+  line-height: 41px;
+  min-width: 98px;
+}
+/* ========Header======== */
+header {
+  background-color: #151515;
+}
+.header .body-header {
+  display: flex;
+  /* align-items: center; */
+  padding: 22px 0 21px;
+}
+/* 2 phần tử có cùng class header và fixed */
+.header.fixed {
+  position: sticky;
+  top: -1px;
+}
+.nav {
+  margin-left: auto;
+}
+.nav ul {
+  display: flex;
+}
+
+.nav a {
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 8px 11px;
+}
+.nav a.main {
+  color: #87e5ca;
+}
+.nav a:hover,
+.nav li.active {
+  color: var(--Cyan-Main-cyan-color, #87e5ca);
+  text-align: center;
+  font-family: Inter;
+  font-weight: 500;
+  text-shadow: 0.5px 0 0 currentColor;
+}
+.header .btn-search {
+  margin-left: 51px;
+}
